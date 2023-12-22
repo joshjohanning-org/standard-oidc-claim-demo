@@ -5,6 +5,10 @@ on:
     branches: main
   workflow_dispatch:
 
+permissions:
+  id-token: write # this is needed for oidc
+  contents: read # this is needed to clone repo
+
 jobs:
   oidc:
-    uses: ./.github/workflows/reusable-workflows-oidc.yml
+    uses: ./.github/workflows/reusable-workflow-oidc.yml
