@@ -1,4 +1,4 @@
-name: azure-oidc-sample # this doesn't show up in ui
+name: reusable-workflow-azure-oidc-sample
 
 on:
   workflow_call:
